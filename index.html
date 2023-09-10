@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="description" content="A random password generator that allows you to create secure password" />
+        <meta name="robots" , content="index, follow" />
+        <meta charset="UTF-8" />
+        <title>Password Generator | Generate random secure passwords.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Generate a <span>random password</span></h1>
+                <p class="subheading">Never use an insecure password again.</p>
+            </header>
+            <button class="password-btn" id="password-btn">Generate passwords</button>
+            <div class="password-slider-container">
+                <label for="password-slider">
+                    Password Length:
+                    <span class="password-length"></span>
+                </label>
+                <input type="range" class="password-slider" id="password-slider" min="5" max="15" value="12">
+            </div>
+            <main>
+                <section class="passwords">
+                    <div class="password">
+                        <p id="password-one"></p>
+                    </div>
+                    <div class="password">
+                        <p id="password-two"></p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
